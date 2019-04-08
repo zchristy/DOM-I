@@ -42,24 +42,42 @@ let nav = document.querySelector('nav');
 
 let navItem1 = document.querySelectorAll('nav a')[0];
 navItem1.innerText = siteContent['nav']['nav-item-1'];
+navItem1.style.color = 'green';
 
 let navItem2 = document.querySelectorAll('nav a')[1];
 navItem2.innerText = siteContent['nav']['nav-item-2'];
+navItem2.style.color = 'green';
 
 let navItem3 = document.querySelectorAll('nav a')[2];
 navItem3.innerText = siteContent['nav']['nav-item-3'];
+navItem3.style.color = 'green';
 
 let navItem4 = document.querySelectorAll('nav a')[3];
 navItem4.innerText = siteContent['nav']['nav-item-4'];
+navItem4.style.color = 'green';
 
 let navItem5 = document.querySelectorAll('nav a')[4];
 navItem5.innerText = siteContent['nav']['nav-item-5'];
+navItem5.style.color = 'green';
 
 let navItem6 = document.querySelectorAll('nav a')[5];
 navItem6.innerText = siteContent['nav']['nav-item-6'];
+navItem6.style.color = 'green';
 
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+let newItem1 = document.createElement('a');
+newItem1.innerHTML = 'World!';
+newItem1.href = '#';
+newItem1.style.color = 'green';
+nav.appendChild(newItem1);
+
+let newItem2 = document.createElement('a');
+newItem2.innerHTML = 'Hello...';
+newItem2.href = '#';
+newItem2.style.color = 'green';
+nav.insertBefore(newItem2, navItem1);
 
 // -------- cta ---------
 let ctaH1 = document.querySelector('.cta-text h1');
