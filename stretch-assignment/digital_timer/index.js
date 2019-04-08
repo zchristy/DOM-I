@@ -1,3 +1,4 @@
+// ======= Selectors =======
 let timer = document.querySelectorAll(".digit");
 
 let secondTens = document.querySelector('#secondTens');
@@ -10,6 +11,9 @@ let msHundreds = document.querySelector('#msHundreds');
 
 let msTens = document.querySelector('#msTens');
 
+
+// ======= Tens - Seconds Interval function =======
+
 let secondTensCounter = 0;
   let sTens = window.setInterval(
     function() {
@@ -21,6 +25,9 @@ let secondTensCounter = 0;
         secondTens.innerHTML = secondTensCounter;
       }
     }, 10000);
+
+
+// ======= One - Seconds Interval function =======
 
 let secondOnesCounter = 0;
   let sOnes = window.setInterval(
@@ -42,9 +49,14 @@ let secondOnesCounter = 0;
       }
     }, 1000);
 
+
+// ======= Colon Interval function =======
+
 let blink = setInterval( function() {
   colon.classList.toggle('blink');
 }, 500);
+
+// ======= Hundred - Milli-Seconds Interval function =======
 
 let msHundredsCounter = 0;
   let hundreds = window.setInterval(
@@ -57,6 +69,9 @@ let msHundredsCounter = 0;
         msHundreds.innerHTML = msHundredsCounter;
       }
     }, 100);
+
+
+// ======= Ten - Milli-Seconds Interval function =======
 
 let msTensCounter = 0;
   let tens = window.setInterval(
