@@ -37,6 +37,36 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
+// --------- Nav ----------
+let nav = document.querySelector('nav');
+
+let navItem1 = document.querySelectorAll('nav a')[0];
+navItem1.innerText = siteContent['nav']['nav-item-1'];
+
+let navItem2 = document.querySelectorAll('nav a')[1];
+navItem2.innerText = siteContent['nav']['nav-item-2'];
+
+let navItem3 = document.querySelectorAll('nav a')[2];
+navItem3.innerText = siteContent['nav']['nav-item-3'];
+
+let navItem4 = document.querySelectorAll('nav a')[3];
+navItem4.innerText = siteContent['nav']['nav-item-4'];
+
+let navItem5 = document.querySelectorAll('nav a')[4];
+navItem5.innerText = siteContent['nav']['nav-item-5'];
+
+let navItem6 = document.querySelectorAll('nav a')[5];
+navItem6.innerText = siteContent['nav']['nav-item-6'];
+
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// -------- cta ---------
+let ctaH1 = document.querySelector('.cta-text h1');
+ctaH1.innerHTML = siteContent['cta']['h1'];
+
+let ctaButton = document.querySelector('.cta-text button');
+ctaButton.innerHTML = siteContent['cta']['button'];
+
+let ctaImg = document.querySelector('#cta-img');
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
